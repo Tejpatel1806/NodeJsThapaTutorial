@@ -1,0 +1,57 @@
+Node js is a javascript runtime built on chrome's v8 javascript engine.
+Node js is a javascript running on server.
+
+when to use Node Js?
+1>I/O Bound
+2>Data Streaming Application
+3>Real Time Chat Application
+
+REPL is most useful to experimenting the Node.js code and debugging the javascript 
+code.In REPL R=>Read,E=>Eval,P=>Print,L=>Loop
+REPL ma enter thava mate terminal je vs code nu aave tema jai ne node em lakhvanu etle
+REPL ma enter thai jasu have ema aapde javascript no code pan lakhi sakie 
+like 3+5 em lakhisu to 8 ans aavse
+ema thi bahar aavva mate aapde .exit lakhavnu etle REPL ni bahar aavi jasu
+REPL ma multiline code pan lakhi sakay do lakhisu etle e automatic ... aam aavse etle 
+e multiline thai gayu 
+REPL ma previous value ne access karva mate _ use karvanu 
+REPL ma .help kari ne jovana badha command ane tene explore karvana .
+
+Node.Js Core Module:-
+Consider module to be same as javascript libraries.A set of function you want to include
+in your application.
+Node.js is a set of builtin modules that you can use without any further installation.
+
+Synchronous means ke jyare aapde request karie tyare te wait karse result aavi jay 
+pachi j teh aagad na statement execute karse
+jyare asynchronous means te wait nai kare result aave tya sudhi etla ma te niche na 
+statement execute karvana start kari dese jevu result aavse ke tarat j te execute thai
+jase
+
+jyare aapdi need hoy ke aapde aapda project ma evi j file upload karvi che jenu extension
+.pdf,.docs ke evu kai hoy tyare aapde path module no use karie
+
+aapde jyare npm na badha modulo no use karvo hoy tyare aapde npm init lakhvanu
+je file ma use karvu che tena parent ma jai ne ane pachi je use karvu hoy te pan download
+ne em karvanu like npm i chalk em kari ne ane tene const chalk=require("chalk");
+aam pan kari devanu ane pachi chalk.badhi property ne em use karta javanu
+
+nodemon che e ek global package che tene npm install nodemon -g ni madad thi install
+kari sakay che ane te package.json ma dependencies ma na jova made karan ke te global 
+che 
+
+module wrapper function etle ke aapde index.js ma je pan code lakhie tene node che 
+teh automatic ek function ma bind kari dese je function hase niche mujab
+(function (exports, require, module, __filename, __dirname) {
+    const name = 'tej';
+    console.log(name);
+    console.log(__dirname);
+    console.log(__filename);
+}) aane wrapper function kevay aama exports,require,module aa badhu local hoy darek
+function nuh etle j toh aapde darek file ma exports,require evu use karie chie
+
+node.js web server:-
+to access the web pages of any application u need the web server.the web server will
+handle the all the http request for that web application
+node.js provide capabilities to create your web server which will handle all http
+request asynchronously.
